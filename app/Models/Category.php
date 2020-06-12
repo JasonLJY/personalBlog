@@ -6,5 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Category extends Model
 {
-    //
+
+    protected $fillable = [
+        'category', 'category_description'
+    ];
+
+    protected $primaryKey = 'category_id';
 }
